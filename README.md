@@ -7,6 +7,22 @@ A friend told me about this game and how there are no public up-to-date bots ava
 
 # Usage Example
 ```csharp
+// Too lazy to clean my imports for you, you will need some of them to use my code below.
+using CefSharp;
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Threading;
+using System.Windows.Forms;
+using SMMOBML.Model;
+using Microsoft.ML.Data;
+using Microsoft.ML;
+using System.Linq;
+using System.Text.RegularExpressions;
+
 ...
 
 // Predict what the images are - using our mashine learning dataset
