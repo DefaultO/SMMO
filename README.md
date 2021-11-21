@@ -1,5 +1,5 @@
 ![smmo](https://user-images.githubusercontent.com/42414542/142766190-a6dc162f-4dd3-41f4-98e8-44689b2ec54f.png)
-# SMMO
+# SMMO (Captcha Solver)
 
 Game: https://web.simple-mmo.com/
 
