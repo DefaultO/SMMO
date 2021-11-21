@@ -4,7 +4,7 @@ A friend told me about this game and how there are no public up-to-date bots ava
 
 Issues you will encounter using this project:
 - ### Memory Leak
-  - That Image Classification causes a Memory Leak when used. I tried to prevent it for my Bot and halfway succeeded in it (it only increases the RAM usage by 1MB/captcha instead of the 100MB/captcha). Since it is a preview thing, I think it's on their end to fully fix it.
+  - That Image Classification causes a Memory Leak when used. I tried to prevent it for my Bot and halfway succeeded in it (it only increases the RAM usage by 1MB/captcha instead of the 100MB/captcha). Since it is a preview thing, I think it's on their end to fully fix it. In Short: Their stuff doesn't get garbage collected. I only experienced it in the past from working with GFX stuff.
 
 <br/>
 
