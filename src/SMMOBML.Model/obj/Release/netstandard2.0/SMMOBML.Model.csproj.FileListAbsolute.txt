@@ -1,0 +1,11 @@
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\bin\Release\netstandard2.0\MLModel.zip
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\bin\Release\netstandard2.0\SMMOBML.Model.deps.json
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\bin\Release\netstandard2.0\SMMOBML.Model.dll
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\bin\Release\netstandard2.0\SMMOBML.Model.pdb
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.csproj.AssemblyReference.cache
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.AssemblyInfoInputs.cache
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.AssemblyInfo.cs
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.csproj.CoreCompileInputs.cache
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.dll
+C:\Users\breit\source\repos\SMMOB\SMMOBML.Model\obj\Release\netstandard2.0\SMMOBML.Model.pdb
