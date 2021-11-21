@@ -8,6 +8,8 @@ A friend told me about this game and how there are no public up-to-date bots ava
 # Usage Example
 You will have to figure your own way of downloading images from https://web.simple-mmo.com/i-am-not-a-bot/generate_image?uid=x, where x is the id of the slot. Instead of downloading the file, which could technically be tracked, and banned for, you could use an internal browser like I did and "screenshot" the images you see in the captcha and work with those.
 
+Same with getting the captcha word you are looking for. I won't include "bot logic" so some of you lazy asses use your brain instead.
+
 Candy Cane is the only asset that is a gif, so you don't have to download it. If what you are looking for is the candy cane, and you downloaded the file from the i-am-not-a-bot link using it's suggested file extension, and it is a gif, you can skip everything.
 ```csharp
 // Too lazy to clean my imports for you, you will need some of them to use my code below.
