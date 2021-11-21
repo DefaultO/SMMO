@@ -5,6 +5,60 @@ Game: https://web.simple-mmo.com/
 
 A friend told me about this game and how there are no public up-to-date bots available for it. I took it literal and coded a bot within hours. That was like 2 weeks ago. Kept this project private until now. Well, I won't provide you with the full functional bot, as I want you to use your braincells too.
 
+# Usage Example
+```csharp
+...
+
+// Predict what the images are - using our mashine learning dataset
+int predictedIndex = -1;
+float bestAcc = 0.0f;
+for (int i = 0; i < image.Length; i++)
+{
+    if (File.Exists(Path.Combine(Properties.Settings.Default.captcha_folder, temp_captcha_folder_name, $"{i}.png")))
+    {
+        // Create single instance of sample data from first line of dataset for model input
+        ModelInput sampleData = new ModelInput()
+        {
+            ImageSource = Path.Combine(Properties.Settings.Default.captcha_folder, temp_captcha_folder_name, $"{i}.png"),
+        };
+
+        // Make a single prediction on the sample data and print results
+        var predictionResult = ConsumeModel.Predict(sampleData);
+        var mlContext = new MLContext();
+        var transformer = mlContext.Model.Load(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "MLModel.zip"), out _);
+        var predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(transformer);
+        var labelBuffer = new VBuffer<ReadOnlyMemory<char>>();
+        predictionEngine.OutputSchema["Score"].Annotations.GetValue("SlotNames", ref labelBuffer);
+        var labels = labelBuffer.DenseValues().Select(l => l.ToString()).ToArray();
+        var index = Array.IndexOf(labels, predictionResult.Prediction);
+        var score = predictionResult.Score[index];
+        var prediction = predictionResult.Prediction;
+
+        // Try to clean/prevent memory leaking
+        sampleData = null;
+        predictionResult = null;
+        mlContext = null;
+        transformer = null;
+        predictionEngine.Dispose();
+        predictionEngine = null;
+        labelBuffer = new VBuffer<ReadOnlyMemory<char>>();
+        labels = null;
+
+        Console.WriteLine($"Predicted {prediction} by {score * 100}%");
+        Console.WriteLine($"[>] {prediction} == {captcha}");
+        Console.WriteLine($"{score} > {minAcc.Value / 100}?");
+        
+        ...
+        
+        // Try to clean/prevent memory leaking
+        prediction = null;
+        
+        ...
+    }
+}
+        
+...
+```
 Issues you will encounter using this project:
 - ### Memory Leak
   - That Image Classification causes a Memory Leak when used. I tried to prevent it for my Bot and halfway succeeded in it (it only increases the RAM usage by 1MB/captcha instead of the 100MB/captcha). Since it is a preview thing, I think it's on their end to fully fix it. In Short: Their stuff doesn't get garbage collected. I only experienced it in the past from working with GFX stuff.
