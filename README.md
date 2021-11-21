@@ -6,7 +6,7 @@ Game: https://web.simple-mmo.com/
 A friend told me about this game and how there are no public up-to-date bots available for it. I took it literal and coded a bot within hours. That was like 2 weeks ago. Kept this project private until now. Well, I won't provide you with the full functional bot, as I want you to use your braincells too.
 
 # Usage Example
-You will have to figure your own way of downloading images from https://web.simple-mmo.com/i-am-not-a-bot/generate_image?uid=x, where x is the id of the slot. Instead of downloading the file, which could technically be tracked, and banned for, you could use an internal browser like I did and "screenshot" the images you see in the captcha and work with those.
+You will have to figure your own way of downloading images from https://web.simple-mmo.com/i-am-not-a-bot/generate_image?uid=x, where x is the id of the slot. Instead of downloading the file, which could technically be tracked, and banned for, you could use an internal browser like I did and "screenshot" the images you see in the captcha and work with those (I used am internal browser, but the second part, I did not do - it's really up to you).
 
 Same with getting the captcha word you are looking for. I won't include "bot logic" so some of you lazy asses use your brain instead.
 
