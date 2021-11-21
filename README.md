@@ -77,7 +77,7 @@ for (int i = 0; i < image.Length; i++)
 ```
 Issues you will encounter using this project:
 - ### Memory Leak
-  - That Image Classification causes a Memory Leak when used. I tried to prevent it for my Bot and halfway succeeded in it (it only increases the RAM usage by 1MB/captcha instead of the 100MB/captcha). Since it is a preview thing, I think it's on their end to fully fix it. In Short: Their stuff doesn't get garbage collected. I only experienced it in the past from working with GFX stuff.
+  - That Image Classification causes a Memory Leak when used. I tried to prevent it for my Bot and halfway succeeded in it (it only increases the RAM usage by 1MB/captcha instead of the 100MB/captcha). Since it is a preview thing, I think it's on their end to fully fix it. In Short: Their stuff doesn't get garbage collected. Set everything you can to null to add it to the garbage collection (as you can see in the example above). I only experienced it in the past from working with GFX stuff.
 
 <br/>
 
