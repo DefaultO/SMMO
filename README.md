@@ -12,7 +12,7 @@ Same with getting the captcha word you are looking for. I won't include "bot log
 
 You probably can input more than just one image to the ImageSource, I never bothered, but it would speed up the process definetly. Instead of up to 4 loops, you would only do one.
 
-Candy Cane is the only asset that is a gif, so you don't have to download it. If what you are looking for is the candy cane, and you downloaded the file from the i-am-not-a-bot link using it's suggested file extension, and it is a gif, you can skip everything.
+Candy Cane is the only asset that is a gif, so you don't have to image classify it. If what you are looking for is the candy cane, and you downloaded the file from the i-am-not-a-bot link using it's suggested file extension, and it is a gif, you know it is the candy cane and can skip everything else.
 ```csharp
 // Too lazy to clean my imports for you, you will need some of them to use my code below.
 using CefSharp;
