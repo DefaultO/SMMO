@@ -1,5 +1,8 @@
 ![smmo](https://user-images.githubusercontent.com/42414542/142766190-a6dc162f-4dd3-41f4-98e8-44689b2ec54f.png)
 # SMMO
+
+Game: https://web.simple-mmo.com/
+
 A friend told me about this game and how there are no public up-to-date bots available for it. I took it literal and coded a bot within hours. That was like 2 weeks ago. Kept this project private until now. Well, I won't provide you with the full functional bot, as I want you to use your braincells too.
 
 Issues you will encounter using this project:
