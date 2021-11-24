@@ -8,7 +8,7 @@ A friend told me about this game and how there are no public up-to-date bots ava
 # Usage Example
 You will have to figure your own way of downloading images from https://web.simple-mmo.com/i-am-not-a-bot/generate_image?uid=x, where x is the id of the slot. Instead of downloading the file, which could technically be tracked, and banned for, you could use an internal browser like I did and "screenshot" the images you see in the captcha and work with those (I used an internal browser, but the second part, I did not do - it's really up to you).
 
-Same with getting the captcha word you are looking for. I won't include "bot logic" so some of you lazy asses use your brain instead.
+Same with getting the captcha word you are looking for.
 
 You probably can input more than just one image to the ImageSource, I never bothered, but it would speed up the process definetly. Instead of up to 4 loops, you would only do one.
 
